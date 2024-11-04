@@ -4,7 +4,11 @@ go 1.23.1
 
 require github.com/nurzzaat/gRPC-example/auth v0.0.0-20241104084840-9e91d909293d
 
-require google.golang.org/genproto/googleapis/rpc v0.0.0-20240814211410-ddb44dafa142 // indirect
+require (
+	github.com/AfterShip/email-verifier v1.4.1 // indirect
+	github.com/hbollon/go-edlib v1.6.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240814211410-ddb44dafa142 // indirect
+)
 
 require (
 	github.com/KyleBanks/depth v1.2.1 // indirect

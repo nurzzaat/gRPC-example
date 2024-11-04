@@ -1,7 +1,6 @@
 package auth
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -9,6 +8,11 @@ import (
 	"github.com/nurzzaat/gRPC-example/common"
 	log "github.com/sirupsen/logrus"
 )
+
+type LoginRequest struct {
+	Email    string `json:"email"`
+	Password string `json:"password"`
+}
 
 // @Summary	SignIn
 // @Tags		auth
@@ -35,7 +39,6 @@ func (lc *AuthController) Signin(c *gin.Context) {
 		log.WithFields(logFields).Error("General data binding error:", err.Error())
 		return
 	}
-	fmt.Printf("1 %+v", loginRequest)
 	log.WithFields(logFields).Infof("request from user: %+v", loginRequest)
 
 	response, err := lc.Client.SignIn(c, &pb.SignInRequest{
@@ -43,15 +46,12 @@ func (lc *AuthController) Signin(c *gin.Context) {
 		Password: loginRequest.Password,
 	})
 	if err != nil {
-		c.JSON(http.StatusBadRequest, common.ErrorResponse{
-			Result: common.ErrorDetail{
-				Code:    err.Error(),
-				Message: "",
-			},
+		c.JSON(http.StatusBadRequest, common.ErrorDetail{
+			Code:    err.Error(),
+			Message: "Error from gRPC server",
 		})
 		return
 	}
-	fmt.Println(response)
 	log.WithFields(logFields).Infof("response from server: %+v", common.SuccessResponse{Result: response})
 	c.JSON(http.StatusOK, common.SuccessResponse{Result: response})
 }

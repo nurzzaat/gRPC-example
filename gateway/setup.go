@@ -22,35 +22,9 @@ func Setup(router *gin.Engine) {
 
 	authRouter := router.Group("/auth")
 	{
-		// adminSignInRouter := authRouter.Group("/admin") //LJIIVNtrSjVO
-		// {
-		// 	adminSignInRouter.POST("/sign-in", controllers.AuthController.LoginAdmin)
-		// }
 		authRouter.POST("/sign-in", controllers.AuthController.Signin)
+		authRouter.POST("/sign-up", controllers.AuthController.Signup)
 	}
-
-	// router.Use(middleware.JWTAuth(app.Env.AccessTokenSecret, app.Redis))
-	// logoutRouter := router.Group("/logout")
-	// {
-	// 	logoutRouter.POST("", controllers.UserController.Logout)
-	// }
-
-	// usersRouter := router.Group("/users")
-	// {
-	// 	usersRouter.GET("",
-	// 		middleware.RBACMiddleware(controllers.LoginController.UserRepository, models.ADMIN, ""),
-	// 		controllers.UsersController.GetAll)
-	// 	usersRouter.GET("/:userId/profile",
-	// 		middleware.RBACMiddleware(controllers.LoginController.UserRepository, models.ADMIN, ""),
-	// 		controllers.UsersController.GetProfile)
-	// }
-
-	// userRouter := router.Group("/user")
-	// {
-	// 	userRouter.GET("/profile", controllers.UserController.GetProfile)
-	// 	userRouter.PATCH("/profile", controllers.UserController.UpdateProfile)
-	// 	userRouter.DELETE("/profile", controllers.UserController.DeleteProfile)
-	// }
 }
 
 type controllers struct {
