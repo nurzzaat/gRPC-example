@@ -1,0 +1,56 @@
+{"@timestamp":"2024-11-04T12:31:54.822+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T12:31:54.837+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T12:32:17.439+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T12:32:17.453+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T12:34:44.493+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T12:34:44.510+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T12:35:00.675+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T12:35:52.433+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T12:35:52.457+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T12:35:55.644+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T12:37:18.678+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T12:37:18.699+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T12:37:29.430+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T12:38:05.702+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T12:38:05.719+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T12:38:51.546+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T12:38:51.561+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T12:41:34.703+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T12:41:34.737+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T12:42:04.211+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T12:56:11.765+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T12:56:11.805+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T12:56:20.245+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:01:00.761+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T13:01:00.785+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T13:01:06.855+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:01:08.003+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:01:08.334+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:01:08.462+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:01:08.566+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:01:08.934+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:02:26.332+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T13:02:26.366+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T13:03:39.245+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T13:03:39.273+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T13:04:01.875+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:06:09.941+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T13:06:09.956+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T13:06:13.756+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:07:19.683+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T13:07:19.702+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T13:07:21.400+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:07:40.774+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T13:07:40.794+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T13:07:42.360+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:09:05.965+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T13:09:06.014+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T13:09:19.606+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:09:19.609+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"response from server: {Result:token:\"accessToken\" Metadata:{Count:0 Properties1:\u003cnil\u003e Properties2:\u003cnil\u003e Properties3:\u003cnil\u003e}}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:37:18.085+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T13:37:18.112+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T13:37:59.542+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:40:48.440+0500","ecs.version":"1.6.0","log.level":"info","message":"application is running"}
+{"@timestamp":"2024-11-04T13:40:48.456+0500","ecs.version":"1.6.0","log.level":"info","message":"Dialing auth service at: localhost:8000"}
+{"@timestamp":"2024-11-04T13:40:51.185+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"request from user: {Email:string Password:string}","requestType":"POST"}
+{"@timestamp":"2024-11-04T13:40:51.467+0500","ecs.version":"1.6.0","endpoint":"/auth/admin/sign-in","log.level":"info","message":"response from server: {Result:token:\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MX0.X7ShDcXz59fkAs6Etr2nld1MHoM4OiZRsTMJk5a4JO8\" Metadata:{Count:0 Properties1:\u003cnil\u003e Properties2:\u003cnil\u003e Properties3:\u003cnil\u003e}}","requestType":"POST"}

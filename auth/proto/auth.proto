@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+option go_package = "github.com/nurzzaat/gRPC-example/auth/proto";
+
+package proto;
+
+service AuthService{
+    rpc SignIn(SignInRequest) returns (SignInResponse);
+    rpc SignUp(SignUpRequest) returns (SignUpResponse);
+    rpc GetUserByEmail(UserEmail) returns (UserResponse);
+    rpc GetUserRoles(UserID) returns (UserRoleResponse);
+}
+
+message UserEmail{
+    string email = 1;
+}
+
+message UserID{
+    uint32 id = 1;
+}
+
+message UserRoleResponse{
+    repeated int32 roles = 1;
+}
+
+message UserResponse{
+    int32 id = 1;
+    string email =2;
+    string password = 3;
+}
+message SignInRequest{
+    string email = 1;
+    string password = 2;
+}
+
+message SignInResponse{
+    string token = 1;
+}
+
+message SignUpRequest{
+    string email = 1;
+    string password = 2;
+}
+
+message SignUpResponse{
+    string token = 1;
+}

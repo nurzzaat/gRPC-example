@@ -1,0 +1,114 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a sample server celler server.",
+        "title": "Swagger Example API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "localhost:1232",
+    "basePath": "/",
+    "paths": {
+        "/auth/sign-in": {
+            "post": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "auth"
+                ],
+                "summary": "SignIn",
+                "parameters": [
+                    {
+                        "description": "login",
+                        "name": "input",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/auth.LoginRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/common.SuccessResponse"
+                        }
+                    },
+                    "default": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/common.ErrorResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "auth.LoginRequest": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "common.ErrorDetail": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "metadata": {
+                    "$ref": "#/definitions/common.Properties"
+                }
+            }
+        },
+        "common.ErrorResponse": {
+            "type": "object",
+            "properties": {
+                "error": {
+                    "$ref": "#/definitions/common.ErrorDetail"
+                }
+            }
+        },
+        "common.Properties": {
+            "type": "object",
+            "properties": {
+                "additionalProp1": {},
+                "additionalProp2": {},
+                "additionalProp3": {},
+                "paginationCount": {
+                    "type": "integer"
+                }
+            }
+        },
+        "common.SuccessResponse": {
+            "type": "object",
+            "properties": {
+                "metadata": {
+                    "$ref": "#/definitions/common.Properties"
+                },
+                "result": {}
+            }
+        }
+    },
+    "securityDefinitions": {
+        "ApiKeyAuth": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    }
+}

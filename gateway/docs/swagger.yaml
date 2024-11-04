@@ -1,0 +1,75 @@
+basePath: /
+definitions:
+  auth.LoginRequest:
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+    type: object
+  common.ErrorDetail:
+    properties:
+      code:
+        type: string
+      message:
+        type: string
+      metadata:
+        $ref: '#/definitions/common.Properties'
+    type: object
+  common.ErrorResponse:
+    properties:
+      error:
+        $ref: '#/definitions/common.ErrorDetail'
+    type: object
+  common.Properties:
+    properties:
+      additionalProp1: {}
+      additionalProp2: {}
+      additionalProp3: {}
+      paginationCount:
+        type: integer
+    type: object
+  common.SuccessResponse:
+    properties:
+      metadata:
+        $ref: '#/definitions/common.Properties'
+      result: {}
+    type: object
+host: localhost:1232
+info:
+  contact: {}
+  description: This is a sample server celler server.
+  title: Swagger Example API
+  version: "1.0"
+paths:
+  /auth/sign-in:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: login
+        in: body
+        name: input
+        required: true
+        schema:
+          $ref: '#/definitions/auth.LoginRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/common.SuccessResponse'
+        default:
+          description: ""
+          schema:
+            $ref: '#/definitions/common.ErrorResponse'
+      summary: SignIn
+      tags:
+      - auth
+securityDefinitions:
+  ApiKeyAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
