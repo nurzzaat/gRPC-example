@@ -10,8 +10,6 @@ import (
 	"google.golang.org/grpc"
 )
 
-//how to implement microservice in golang
-
 var (
 	grpcAddr = "localhost:8000"
 )
@@ -19,17 +17,16 @@ var (
 func main() {
 	grpcServer := grpc.NewServer()
 
-	pqlDB, err := pkg.NewPgxConn()
-	if err != nil {
-		log.Fatal("Error connection to db:", err.Error())
-	}
-
 	l, err := net.Listen("tcp", grpcAddr)
 	if err != nil {
 		log.Fatal("")
 	}
 	defer l.Close()
 
+	pqlDB, err := pkg.NewPgxConn()
+	if err != nil {
+		log.Fatal("Error connection to db:", err.Error())
+	}
 	repo := repository.NewUserRepository(pqlDB)
 	controller.NewGRPCHandler(grpcServer, repo)
 

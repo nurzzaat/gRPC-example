@@ -8,10 +8,12 @@ create table
 		deleted_at varchar(255) default ''
 	);
 
-INSERT INTO users (email, user_password, role_id) VALUES ('admin@admin.com', '$2a$10$DMphGc0NQ1MJZCD6tyNeBOOrpP6REzj/t.iCwr9HCNwbZ4TN7xE8S', 1); 
+INSERT INTO users (email, password) VALUES ('admin@admin.com', '$2a$10$DMphGc0NQ1MJZCD6tyNeBOOrpP6REzj/t.iCwr9HCNwbZ4TN7xE8S'); 
 
 create table user_roles(
 	user_id integer references users(id) on delete cascade on update cascade,
 	role_id integer,
 	primary key(user_id , role_id)
 );
+
+insert into user_roles values(1,1);

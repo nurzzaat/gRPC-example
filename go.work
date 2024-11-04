@@ -4,6 +4,4 @@ use (
     ./auth
     ./common
     ./gateway
-    ./todo
-    ./users
 )

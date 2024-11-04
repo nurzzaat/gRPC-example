@@ -14,7 +14,7 @@ import (
 func (s *grpcHandler) SignIn(ctx context.Context, request *pb.SignInRequest) (*pb.SignInResponse, error) {
 	logFields := log.Fields{
 		"requestType": "POST",
-		"endpoint":    "/auth/admin/sign-in",
+		"endpoint":    "/auth/sign-in",
 	}
 
 	fmt.Println("It's come here!!!")
